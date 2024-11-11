@@ -10,6 +10,7 @@ declare global {
     interface ProjectProps {
       title?: string;
       projectItems: ProjectCard[];
+      link?:string;
     }
     interface ServiceProps {
         title: string;

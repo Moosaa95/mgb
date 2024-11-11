@@ -2,6 +2,9 @@
 import React from 'react'
 import {motion} from "framer-motion"
 import { BentoGrid, BentoGridItem } from './ui/BentoGrid'
+import Link from 'next/link';
+import MagicButton from './ui/MagicButton';
+import { FiArrowRight } from 'react-icons/fi';
 
 interface Props {
     title: string;
@@ -14,7 +17,7 @@ interface Props {
   const Skeleton = () => (
     <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black"></div>
   );
-const Grid = ({title, services}: {title:string; services:Props[]}) => {
+const Grid = ({title, services, link}: {title:string; services:Props[], link?:string;}) => {
   return (
     <section id='services'>
         <motion.h2
@@ -40,6 +43,11 @@ const Grid = ({title, services}: {title:string; services:Props[]}) => {
                 />
             ))}
         </BentoGrid>
+        {link && (
+          <div className='flex justify-center'>
+              <MagicButton title='Learn More' link={link} icon={<FiArrowRight />} position='right' />
+          </div>
+        )}
     </section>
   )
 }

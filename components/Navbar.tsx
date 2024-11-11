@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
         {/* Headerigation Links */}
         <div className={`md:flex space-x-6 items-center ${isOpen ? 'block' : 'hidden'}`}>
         {['Home', 'About', 'Services', 'Projects', 'Clients', 'Gallery', 'Contact'].map((item, index) => (
-            <Link key={item} className={`${isScrolled ? 'text-gray-100': 'text-gray-700'} hover:text-indigo-600 transition `} href={`/${item.toLowerCase()}`}>
+            <Link key={item} className={`${isScrolled ? 'text-gray-100': 'text-[#020025]'} hover:text-indigo-600 transition `} href={`/${item.toLowerCase()}`}>
               <motion.li
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
           ))}
           <motion.a
             href="/contact"
-            className="px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition"
+            className={`px-4 py-2 ${isScrolled? 'bg-indigo-600' : 'bg-[#020025]'} text-white rounded-lg shadow hover:bg-indigo-700 transition`}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >

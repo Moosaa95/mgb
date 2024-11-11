@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export const Card = React.memo(
   ({
@@ -15,13 +16,14 @@ export const Card = React.memo(
     hovered: number | null;
     setHovered: React.Dispatch<React.SetStateAction<number | null>>;
   }) => (
-    <div
+    <Link
       onMouseEnter={() => setHovered(index)}
       onMouseLeave={() => setHovered(null)}
       className={cn(
         "rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden h-60 md:h-96 w-full transition-all duration-300 ease-out",
         hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
       )}
+      href={card.link}
     >
       <Image
         src={card.src}
@@ -39,7 +41,7 @@ export const Card = React.memo(
           {card.title}
         </div>
       </div>
-    </div>
+    </Link>
   )
 );
 
