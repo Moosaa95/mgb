@@ -1,7 +1,12 @@
 import Grid from '@/components/Grid'
 import HeroBanner from '@/components/Hero'
+import HeroBannerTwo from '@/components/Hero-Two';
 import Mission from '@/components/Mission';
 import Project  from '@/components/Projects';
+import Testimonials from '@/components/Testimonial';
+import Typewriter from '@/components/Typewriter';
+import WhoWeAreTimeline from '@/components/WhoWeAre';
+import WhyChooseUs from '@/components/Why';
 import React from 'react'
 
 
@@ -54,11 +59,14 @@ const services:ServiceProps[] = [
     },
   ];
 
-const page = () => {
+const Home = () => {
   return (
-    <div className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-        <div className="max-w-7xl w-full">
-            <HeroBanner />
+    <div className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 overflow-clip">
+        {/* <div className="max-w-7xl w-full"> */}
+        <div className="max-w-full w-[100vw]">
+            {/* <HeroBanner /> */}
+            <HeroBannerTwo />
+
         </div>
         <div>
             <Mission />
@@ -66,11 +74,20 @@ const page = () => {
         <div className='flex flex-col my-10'>
         <Grid title="Our Core Services" services={services} link='/service' />
         </div>
+        <div>
+          <WhyChooseUs />
+        </div>
         <div className='flex flex-col my-10'>
             <Project projectItems={cards} link='/project' />
+        </div>
+        <div>
+          <Typewriter />
+        </div>
+        <div>
+          <Testimonials />
         </div>
     </div>
   )
 }
 
-export default page
+export default Home

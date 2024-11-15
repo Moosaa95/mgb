@@ -1,12 +1,23 @@
 'use client'
 
+import { FaLocationArrow } from "react-icons/fa";
+import MagicButton from "./ui/MagicButton";
+
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Footer: React.FC = () => (
-  <footer className="bg-gray-900 text-gray-300 py-8">
+  <footer className="bg-[#01031a] text-gray-300 py-8">
     <div className="container mx-auto px-4">
+      <div className="flex flex-col items-center my-16">
+        <h1 className="font-bold text-4xl md:text-5xl text-center">
+        Ready to transform <span className="text-purple"> your </span> project with sustainable solutions?
+        </h1>
+        <p className="text-white-200 md:mt-10 my-5 text-center"> Let’s discuss how MBG Industrial and General Technologies can bring innovation, efficiency, and sustainability to your next project.</p>
+        <MagicButton title="Get in Touch" position="right" icon={<FaLocationArrow />} />
+
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* About MBG */}
         <div>

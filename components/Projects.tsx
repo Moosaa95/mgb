@@ -9,7 +9,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 export default function Project({title="Our Projects", projectItems, link}:ProjectProps) {
   return (
-    <section className="w-[100vw]">
+    <section className="w-[100vw] space-y-4">
         <motion.h2
             className="text-3xl uppercase tracking-widest font-bold text-center text-white mb-12"
             initial={{ opacity: 0 }}
