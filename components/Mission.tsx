@@ -6,6 +6,10 @@ import { StickyScroll } from "./ui/StickyScroll";
 import {motion} from "framer-motion";
 import { FaBullseye, FaEye, FaHandshake, FaHandsHelping, FaLeaf, FaLightbulb, FaPeopleCarry } from "react-icons/fa";
 
+interface Props {
+  description?: string;
+  title?: string;
+}
 
 const content = [
   {
@@ -88,29 +92,33 @@ const content = [
   
 ];
 
-export default function Mission() {
+
+export default function Mission({title="Who we Are", description="MBG Industrial and General Technologies is a leading engineering firm dedicated to sustainable solutions. With a commitment to innovation and integrity, we strive to empower communities and industries." }:Props) {
   return (
     <section className="w-[100vw] space-y-4">
         <motion.h2
-            className="text-3xl uppercase tracking-widest font-bold text-center text-white mb-12"
+            className="text-3xl uppercase tracking-widest font-bold text-center text-white my-12"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
         >
-         Who we Are  
+         {title} 
         </motion.h2>
-        <motion.p
-            className="text-lg text-white/80 text-center"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
-          >
-            MBG Industrial and General Technologies is a leading engineering firm dedicated to sustainable solutions. 
-            With a commitment to innovation and integrity, we strive to empower communities and industries.
-          </motion.p>
-    <div className="p-10 overflow-hidden">
-      <StickyScroll content={content} />
-    </div>
+        <div className="md:flex md:items-center md:justify-center">
+          <div className="md:w-1/3">
+          <motion.p
+              className="text-lg text-white/80 text-center"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.2 }}
+            >
+              {description}
+            </motion.p>
+          </div>
+          <div className="p-10 overflow-hidden">
+            <StickyScroll content={content} />
+          </div>
+        </div>
   </section>
   );
 }

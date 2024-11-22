@@ -1,6 +1,7 @@
 import Grid from '@/components/Grid'
 import HeroBanner from '@/components/Hero'
 import HeroBannerTwo from '@/components/Hero-Two';
+import HeroBannerThree from '@/components/Hero-Three';
 import Mission from '@/components/Mission';
 import Project  from '@/components/Projects';
 import Testimonials from '@/components/Testimonial';
@@ -28,6 +29,13 @@ const cards: ProjectCard[] = [
     },
     {
       id: 3,
+      title: "Installation Of Treatment plant for Kwara Breweries Limited",
+      description: "Installation and design of effluent Treatment Plamt.",
+      src: "/images/bweries-kwara.jpg",
+      link: "/projects/mtn-site",
+    },
+    {
+      id: 4,
       title: "Installation Of Treatment plant for Kwara Breweries Limited",
       description: "Installation and design of effluent Treatment Plamt.",
       src: "/images/bweries-kwara.jpg",
@@ -65,12 +73,13 @@ const Home = () => {
         {/* <div className="max-w-7xl w-full"> */}
         <div className="max-w-full w-[100vw]">
             {/* <HeroBanner /> */}
-            <HeroBannerTwo />
+            {/* <HeroBannerTwo /> */}
+            <HeroBannerThree />
 
         </div>
-        <div>
+        {/* <div>
             <Mission />
-        </div>
+        </div> */}
         <div className='flex flex-col my-10'>
         <Grid title="Our Core Services" services={services} link='/service' />
         </div>
