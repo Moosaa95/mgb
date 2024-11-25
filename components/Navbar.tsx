@@ -51,8 +51,10 @@ const Navbar: React.FC = () => {
 
         {/* Headerigation Links */}
         <div className={`md:flex space-x-6 items-center ${isOpen ? 'block' : 'hidden'}`}>
-        {['Home', 'About', 'Services', 'Projects', 'Clients', 'Contact'].map((item, index) => (
-            <Link key={item} className={`${isScrolled ? 'text-gray-100': 'text-[#020025]'} hover:text-indigo-600 transition `} href={`/${item.toLowerCase()}`}>
+        {['Home', 'About', 'Services', 'Projects', 'Clients', 'Contact'].map((item, index) => {
+          const linkHref = `/${item.toLowerCase().replace(/\s+/g, "-") === "home" ? "" : item.toLowerCase().replace(/\s+/g, "-")}`;
+          return (
+            <Link key={item} className={`${isScrolled ? 'text-gray-100': 'text-[#020025]'} hover:text-indigo-600 transition `} href={linkHref}>
               <motion.li
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -62,7 +64,7 @@ const Navbar: React.FC = () => {
                 {item}
               </motion.li>
             </Link>
-          ))}
+          )})}
           <motion.a
             href="/contact"
             className={`px-4 py-2 ${isScrolled? 'bg-indigo-600' : 'bg-[#020025]'} text-white rounded-lg shadow hover:bg-indigo-700 transition`}
@@ -104,11 +106,13 @@ const Navbar: React.FC = () => {
             />
             <div className="flex flex-col items-center gap-7">
               <ul className="flex flex-col text-base gap-7">
-                {['Home', 'About', 'Services', 'Projects', 'Clients', 'Contact'].map((item, index) => (
+                {['Home', 'About', 'Services', 'Projects', 'Clients', 'Contact'].map((item, index) => {
+                const linkHref = `/${item.toLowerCase().replace(/\s+/g, "-") === "home" ? "" : item.toLowerCase().replace(/\s+/g, "-")}`;
+                return (
                   <Link
                     key={item}
                     className="flex items-center gap-1 font-medium text-white duration-300 cursor-pointer hover:text-white/60"
-                    href={`/${item.toLowerCase()}`}
+                    href={linkHref}
                     
                   >
                     <motion.li
@@ -122,7 +126,7 @@ const Navbar: React.FC = () => {
                     </motion.li>
                     
                   </Link>
-                ))}
+                )})}
                   
               </ul>
             </div>

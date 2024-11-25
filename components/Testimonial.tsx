@@ -4,7 +4,8 @@ import React from "react";
 import {motion} from "framer-motion"
 import { InfiniteMovingCards } from "./ui/InfiniteMoving";
 
-export default function Testimonials() {
+
+export default function Testimonials({title="Testimonials"}:{title?:string}) {
   return (
     <section className="py-0">
         <motion.h2
@@ -13,7 +14,7 @@ export default function Testimonials() {
     animate={{ opacity: 1 }}
     transition={{ duration: 1, delay: 0.2 }}
 >
-    Testimonials
+    {title}
     
 </motion.h2>
 

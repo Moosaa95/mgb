@@ -16,7 +16,7 @@ declare global {
         title: string;
         description: string;
         icon: string;
-        link: string;
+        link?: string;
         id: number;
     }
   }

@@ -10,7 +10,7 @@ interface Props {
     title: string;
     description: string;
     icon: string;
-    link: string;
+    link?: string;
     id: number;
 }
 
@@ -38,7 +38,7 @@ const Grid = ({title, services, link}: {title:string; services:Props[], link?:st
                     id={id}
                     header={<Skeleton />}
                     icon={icon}
-                    link={link}
+                    link={link??""}
                     
                 />
             ))}
