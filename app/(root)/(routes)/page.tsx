@@ -1,12 +1,9 @@
+import { FAQSection } from '@/components/Faq';
 import Grid from '@/components/Grid'
-import HeroBanner from '@/components/Hero'
-import HeroBannerTwo from '@/components/Hero-Two';
 import HeroBannerThree from '@/components/Hero-Three';
-import Mission from '@/components/Mission';
 import Project  from '@/components/Projects';
 import Testimonials from '@/components/Testimonial';
 import Typewriter from '@/components/Typewriter';
-import WhoWeAreTimeline from '@/components/WhoWeAre';
 import WhyChooseUs from '@/components/Why';
 import React from 'react'
 
@@ -14,32 +11,36 @@ import React from 'react'
 const cards: ProjectCard[] = [
     {
         id: 1,
-      title: "Power Solution for Coscharis Group",
-      description: "Installation of power systems at Coscharis Group headquarters in Lagos.",
-      src: "/images/coharis-power-installation.jpg",
+      title: " Solar Hybrid System",
+      description: "Installation of Solar Hybrid System at FCMB MURITALA MOHAMMED WAY ILORIN, KWARA STATE.",
+      src: "/images/ongoing-project/solar-hybrid-system1.jpeg",
       link: "/projects/coscharis-power",
+      status: "ongoing"
     },
 
     {
         id: 2,
-      title: "Installation Of Street and Security Light",
-      description: "Installation and commissioning of street and security light (LED) for  Coscharis Group HQ, Awoyaya, Lagos.",
-      src: "/images/coharis-one.jpg",
+      title: "FCMB",
+      description: "FCMB on Akin Olugbade Street, Ijebu-Ode, Ogun State",
+      src: "/images/ongoing-project/FCMB3.jpeg",
       link: "/projects/mtn-site",
+      status: "ongoing"
     },
     {
       id: 3,
-      title: "Installation Of Treatment plant for Kwara Breweries Limited",
-      description: "Installation and design of effluent Treatment Plamt.",
-      src: "/images/bweries-kwara.jpg",
+      title: "Solar Hybrid Power System",
+      description: "Solar Hybrid Power System for Ecobank on Muritala Mohammed Way Ilorin, Kwara State.",
+      src: "/images/completed-project/solar-hybrid-power-system .jpeg",
       link: "/projects/mtn-site",
+      status: "completed"
     },
     {
       id: 4,
-      title: "Installation Of Treatment plant for Kwara Breweries Limited",
-      description: "Installation and design of effluent Treatment Plamt.",
-      src: "/images/bweries-kwara.jpg",
+      title: "Solar Hybrid Power System",
+      description: "Installation of Solar Hybrid System at FCMB MURITALA MOHAMMED WAY ILORIN, KWARA STATE.",
+      src: "/images/ongoing-project/solar-hybrid-power-system5.jpeg",
       link: "/projects/mtn-site",
+      status: "ongoing"
     },
   ];
 
@@ -69,31 +70,28 @@ const services:ServiceProps[] = [
 
 const Home = () => {
   return (
-    <div className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 overflow-clip">
-        {/* <div className="max-w-7xl w-full"> */}
+    <div className="relative bg-black-100 flex justify-center items-center flex-col  mx-auto sm:px-10 px-5 overflow-clip">
         <div className="max-w-full w-[100vw]">
-            {/* <HeroBanner /> */}
-            {/* <HeroBannerTwo /> */}
             <HeroBannerThree />
 
         </div>
-        {/* <div>
-            <Mission />
-        </div> */}
         <div className='flex flex-col my-10'>
-        <Grid title="Our Core Services" services={services} link='/service' />
+        <Grid title="Our Core Services" services={services} link='/services' />
         </div>
         <div>
           <WhyChooseUs />
         </div>
         <div className='flex flex-col my-10'>
-            <Project projectItems={cards} link='/project' />
+            <Project projectItems={cards} link='/projects' />
         </div>
         <div>
           <Typewriter />
         </div>
         <div>
           <Testimonials />
+        </div>
+        <div>
+          <FAQSection />
         </div>
     </div>
   )

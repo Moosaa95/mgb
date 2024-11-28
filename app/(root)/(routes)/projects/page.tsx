@@ -6,31 +6,59 @@ import Image from "next/image";
 
 const allProjects = [
   {
-    title: "Lagos Solar Power Initiative",
+    title: "Solar Hybrid System",
     description:
-      "Installation of solar power systems for over 5,000 homes in Lagos State, ensuring sustainable energy for the community.",
-    image: "/images/coharis-one.jpg",
-    category: "Completed",
-  },
-  {
-    title: "Eco-Friendly Housing Development",
-    description:
-      "Design and construction of energy-efficient housing solutions in Abuja, reducing environmental impact.",
-    image: "/images/coharis-one.jpg",
+      "Installation of Solar Hybrid System at FCMB MURITALA MOHAMMED WAY ILORIN, KWARA STATE.",
+    image: "/images/ongoing-project/solar-hybrid-system1.jpeg",
     category: "Ongoing",
   },
   {
-    title: "Northern Nigeria Electrification",
+    title: "Solar Hybrid Power System",
     description:
-      "Bringing reliable electricity to underserved rural communities in Northern Nigeria through innovative systems.",
-    image: "/images/coharis-one.jpg",
+      "Solar Hybrid Power System for Ecobank on Muritala Mohammed Way Ilorin, Kwara State.",
+    image: "/images/completed-project/solar-hybrid-power-system .jpeg",
     category: "Completed",
   },
   {
-    title: "Modern Logistics Hub",
+    title: "Solar Hybrid System",
     description:
-      "Development of a state-of-the-art logistics hub for efficient transportation and distribution in Port Harcourt.",
-    image: "/images/coharis-power-installation.jpg",
+      "Installation of Solar Hybrid System at FCMB MURITALA MOHAMMED WAY ILORIN, KWARA STATE.",
+    image: "/images/ongoing-project/solar-hybrid-system2.jpeg",
+    category: "Ongoing",
+  },
+  // {
+  //   title: "Modern Logistics Hub",
+  //   description:
+  //     "Development of a state-of-the-art logistics hub for efficient transportation and distribution in Port Harcourt.",
+  //   image: "/images/coharis-power-installation.jpg",
+  //   category: "Ongoing",
+  // },
+  {
+    title: "Installation",
+    description:
+      "FCMB on Akin Olugbade Street, Ijebu-Ode, Ogun State",
+    image: "/images/ongoing-project/FCMB3.jpeg",
+    category: "Ongoing",
+  },
+  {
+    title: "FCMB",
+    description:
+      "FCMB on Akin Olugbade Street, Ijebu-Ode, Ogun State",
+    image: "/images/ongoing-project/FCMB5.jpeg",
+    category: "Ongoing",
+  },
+  {
+    title: "Solar Hybrid System",
+    description:
+      "Installation of Solar Hybrid System at FCMB MURITALA MOHAMMED WAY ILORIN, KWARA STATE.",
+    image: "/images/ongoing-project/solar-hybrid-system4.jpeg",
+    category: "Ongoing",
+  },
+  {
+    title: "Solar Hybrid System",
+    description:
+      "Installation of Solar Hybrid System at FCMB MURITALA MOHAMMED WAY ILORIN, KWARA STATE.",
+    image: "/images/ongoing-project/solar-hybrid-system5.jpeg",
     category: "Ongoing",
   },
 ];
@@ -92,8 +120,8 @@ export default function ProjectsPage() {
                 src={project.image}
                 alt={project.title}
                 width={400}
-                height={300}
-                className="rounded-lg mb-4"
+                height={200}
+                className="rounded-lg mb-4 h-[400px]"
               />
               <h3 className="text-xl text-gray-300 font-bold mb-2">{project.title}</h3>
               <p className="text-gray-200">{project.description}</p>

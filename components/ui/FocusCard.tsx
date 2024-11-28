@@ -31,6 +31,16 @@ export const Card = React.memo(
         fill
         className="object-cover absolute inset-0"
       />
+       <div 
+        className={cn(
+          "absolute bottom-4  left-4 text-lg font-semibold text-gray-300 px-4 py-2 rounded-lg shadow-lg",
+          card.status === "ongoing" ? "bg-black-100" :
+          card.status === "completed" ? "bg-indigo-500" :
+          "bg-gray-600"
+        )}
+       >
+          {card.status}
+        </div>
       <div
         className={cn(
           "absolute inset-0 bg-black/50 flex items-end py-8 px-4 transition-opacity duration-300",

@@ -5,6 +5,8 @@ declare global {
       description: string;
       src: string;
       link?: string;
+      status?: "ongoing" | "completed"
+
     }
   
     interface ProjectProps {

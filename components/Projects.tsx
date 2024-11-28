@@ -7,7 +7,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 
 
-export default function Project({title="Ongoing Projects", projectItems, link}:ProjectProps) {
+export default function Project({title="Projects", projectItems, link}:ProjectProps) {
   return (
     <section className="w-[100vw] space-y-4">
         <motion.h2
