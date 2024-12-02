@@ -7,7 +7,7 @@ export async function POST(req: NextRequest) {
 
     console.log("NAME===", name, email, service, message);
     
-    if (!name || !email || !service || !message) {
+    if (!name || !email || !message) {
       return NextResponse.json(
         { message: 'All fields are required' },
         { status: 400 }
@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
       },
     ];
 
-    const subject = `New Quote Request: ${service}`;
+    const subject = service ? `New Quote Request: ${service}` : "Enquire message";
     const htmlMessage = `
       <h3>New Quote Request</h3>
       <p><strong>Name:</strong> ${name}</p>

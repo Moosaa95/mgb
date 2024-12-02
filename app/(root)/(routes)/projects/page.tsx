@@ -16,7 +16,63 @@ const allProjects = [
     title: "Solar Hybrid Power System",
     description:
       "Solar Hybrid Power System for Ecobank on Muritala Mohammed Way Ilorin, Kwara State.",
-    image: "/images/completed-project/solar-hybrid-power-system .jpeg",
+    image: "/images/completed-project/solar-hybrid-power-system.jpeg",
+    category: "Completed",
+  },
+  {
+    title: "Control Solar Power System",
+    description:
+      "Solar Hybrid Power Integration at Ecobank, Dugbe, Ibadan,  Oyo State",
+    image: "/images/completed-project/solar-integration-control.jpeg",
+    category: "Completed",
+  },
+  {
+    title: "Solar Hybrid Power System",
+    description:
+      "Solar Hybrid Power Integration at Ecobank, Dugbe, Ibadan,  Oyo State",
+    image: "/images/completed-project/solar-integration.jpeg",
+    category: "Completed",
+  },
+  {
+    title: "Solar Hybrid Power System",
+    description:
+      "Solar Hybrid Power System for FCMB Ijebu-Ode Ogun State",
+    image: "/images/completed-project/solar-hybrid-control-ogun-two.jpeg",
+    category: "Completed",
+  },
+  {
+    title: "Solar Hybrid Panels",
+    description:
+      "Solar Hybrid Power System for FCMB Ijebu-Ode Ogun State",
+    image: "/images/completed-project/solar-hybrid-ogun-panels.jpeg",
+    category: "Completed",
+  },
+  {
+    title: "Solar Hybrid Wiring",
+    description:
+      "Solar Hybrid Power System for FCMB Ijebu-Ode Ogun State",
+    image: "/images/completed-project/solar-hybrid-wiring-ogun.jpeg",
+    category: "Completed",
+  },
+  {
+    title: "Solar Hybrid Switch",
+    description:
+      "Solar Hybrid Power System for FCMB Ijebu-Ode Ogun State",
+    image: "/images/completed-project/solar-hybrid-ogun-switch.jpeg",
+    category: "Completed",
+  },
+  {
+    title: "Solar Hybrid Power Control System",
+    description:
+      "Solar Hybrid Power System for FCMB Ijebu-Ode Ogun State",
+    image: "/images/completed-project/solar-hybrid-control-ogun-three.jpeg",
+    category: "Completed",
+  },
+  {
+    title: "Solar Hybrid Power System Poly",
+    description:
+      "Solar Hybrid Power Integration, FCMB @ Kwara Poly permanent site Ilorin,  Kwara State",
+    image: "/images/completed-project/solar-integration.jpeg",
     category: "Completed",
   },
   {
@@ -26,13 +82,6 @@ const allProjects = [
     image: "/images/ongoing-project/solar-hybrid-system2.jpeg",
     category: "Ongoing",
   },
-  // {
-  //   title: "Modern Logistics Hub",
-  //   description:
-  //     "Development of a state-of-the-art logistics hub for efficient transportation and distribution in Port Harcourt.",
-  //   image: "/images/coharis-power-installation.jpg",
-  //   category: "Ongoing",
-  // },
   {
     title: "Installation",
     description:

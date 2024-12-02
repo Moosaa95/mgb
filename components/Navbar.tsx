@@ -144,6 +144,14 @@ const Navbar: React.FC = () => {
                 )})}
                   
               </ul>
+              <motion.button
+                className={`px-4 py-2 ${isScrolled? 'bg-indigo-600' : 'bg-[#020025]'} text-white rounded-lg shadow hover:bg-indigo-700 transition`}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => setShowModal(true)}
+              >
+                Get a Quote
+              </motion.button>
             </div>
 
           </motion.div>

@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 export function ClientImpact() {
   const stats = [
     { number: 100, description: "Projects Successfully Delivered" },
-    { number: 20, description: "Years of Industry Expertise" },
+    { number: 16, description: "Years of Industry Expertise" },
     { number: 50, description: "Skilled Professionals on Our Team" },
     { number: 30, description: "Communities Empowered Across Nigeria" },
     { number: 10, description: "Awards for Excellence and Innovation" },

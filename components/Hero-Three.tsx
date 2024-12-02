@@ -10,6 +10,9 @@ export default function HeroBannerThree() {
   const images = [
     "/images/home-hero-two.jpeg",
     "/images/home-hero.jpeg",
+    "/images/home-hero-four.jpeg",
+    "/images/home-hero-three.jpeg",
+    "/images/home-hero-five.jpeg",
     
   ];
   return (
