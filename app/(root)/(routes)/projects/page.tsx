@@ -72,7 +72,7 @@ const allProjects = [
     title: "Solar Hybrid Power System Poly",
     description:
       "Solar Hybrid Power Integration, FCMB @ Kwara Poly permanent site Ilorin,  Kwara State",
-    image: "/images/completed-project/solar-integration.jpeg",
+    image: "/images/completed-project/kwara-poly-panel.jpeg",
     category: "Completed",
   },
   {
