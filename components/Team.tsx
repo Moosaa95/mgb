@@ -17,6 +17,8 @@ export function Teams() {
     { name: "Ugochukwu Arisukwu", title: "C & G Electrical" },
     { name: "Ahmed Sheriff", title: "OND Architecture" },
     { name: "Asamu Abiola S", title: "Environmental Resource Mgt. (Administrative Officer)" },
+    { name: "Aluko Idowu", title: " Mechanical Engineering. (Field Operation Engineer )" },
+    { name: "Raheem Adebisi Rafiu", title: "Land Surveyor. (Field Operations (Civil))" },
   ];
 
   return (

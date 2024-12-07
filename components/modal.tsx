@@ -126,7 +126,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isVisible, onClose }) =>
                     <input
                       type="text"
                       id="name"
-                      className="w-full bg-black-300 border border-gray-300 rounded-lg p-2 focus:ring-indigo-500 focus:border-indigo-500"
+                      className="w-full text-gray-300 bg-black-300 border border-gray-300 rounded-lg p-2 focus:ring-indigo-500 focus:border-indigo-500"
                       placeholder="Enter your name"
                       required
                     />
@@ -138,7 +138,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({ isVisible, onClose }) =>
                     <input
                       type="email"
                       id="email"
-                      className="w-full bg-black-300 border border-gray-300 rounded-lg p-2 focus:ring-indigo-500 focus:border-indigo-500"
+                      className="w-full text-gray-300 bg-black-300 border border-gray-300 rounded-lg p-2 focus:ring-indigo-500 focus:border-indigo-500"
                       placeholder="Enter your email"
                       required
                     />

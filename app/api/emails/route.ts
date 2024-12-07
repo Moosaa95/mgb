@@ -28,10 +28,10 @@ export async function POST(req: NextRequest) {
 
     const subject = service ? `New Quote Request: ${service}` : "Enquire message";
     const htmlMessage = `
-      <h3>New Quote Request</h3>
+      <h3>${subject}</h3>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Service:</strong> ${service}</p>
+      <p><strong>Service:</strong> ${service||subject}</p>
       <p><strong>Message:</strong> ${message}</p>
     `;
 
@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
     });
 
     // Return success response
-    return NextResponse.json({ accepted: result.accepted });
+    return NextResponse.json({ accepted: "Message has been sent successfully" });
   } catch (error) {
     console.error('Error sending email:', error);
     return NextResponse.json(
