@@ -21,8 +21,8 @@ export async function POST(req: NextRequest) {
 
     const receipients = [
       {
-        name: "MBG",
-        address: "abzmoosa@gmail.com", 
+        name: "MBG Tech Solutions", 
+        address: "enquiries@mbgtechsolutions.com", // Your official email
       },
     ];
 
@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
     });
 
     // Return success response
-    return NextResponse.json({ accepted: "Message has been sent successfully" });
+    return NextResponse.json({ accepted: "Message has been sent successfully", result });
   } catch (error) {
     console.error('Error sending email:', error);
     return NextResponse.json(
