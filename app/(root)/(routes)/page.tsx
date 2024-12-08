@@ -50,21 +50,21 @@ const services:ServiceProps[] = [
       title: "Solar Engineering",
       description: "End-to-end solar solutions designed to maximize energy efficiency and sustainability.",
       icon: "/images/solar-energy.svg",
-      link: "/services#solar-engineering"
+      // link: "/services#solar-engineering"
     },
     {
         id: 2,
       title: "Housing Infrastructure",
       description: "Energy-efficient housing solutions integrating modern and sustainable designs.",
       icon: "/images/housing-svgrepo-com.svg",
-      link: "/services#housing-infrastructure"
+      // link: "/services#housing-infrastructure"
     },
     {
         id: 3,
       title: "Renewable Energy",
       description: "Comprehensive renewable solutions including wind, solar, and hybrid systems.",
       icon: "/images/renewable-energy-innovation-svgrepo-com.svg",
-      link: "/services#renewable-energy"
+      // link: "/services#renewable-energy"
     },
   ];
 

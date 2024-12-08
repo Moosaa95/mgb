@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
                 transition={{ duration: 0.2, delay: index * 0.1 }}
                 className={`list-none font-bold text-base cursor-pointer ${
                             isActive
-                              ? "text-indigo-600 underline" // Active style
+                              ? "text-indigo-600" // Active style
                               : isScrolled
                               ? "text-gray-100"
                               : "text-[#020025] hover:text-indigo-600"

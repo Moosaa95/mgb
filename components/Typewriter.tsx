@@ -1,8 +1,13 @@
 "use client";
 
 import { TypewriterEffect } from "./ui/TypewriterEffect";
+import { useRouter } from 'next/navigation'
+
 
 export default function Typewriter() {
+  const router = useRouter()
+
+
   const words = [
     {
       text: "Empower",
@@ -34,10 +39,10 @@ export default function Typewriter() {
 
       {/* Buttons */}
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">
-        <button className="w-40 h-10 rounded-xl bg-indigo-600 text-white text-sm shadow-lg hover:bg-indigo-700 transition">
+        <button onClick={() => router.push("/about")} className="w-40 h-10 rounded-xl bg-indigo-600 text-white text-sm shadow-lg hover:bg-indigo-700 transition">
           Learn More
         </button>
-        <button className="w-40 h-10 rounded-xl bg-white text-indigo-600 border border-indigo-600 text-sm shadow-lg hover:bg-indigo-100 transition">
+        <button onClick={() => router.push("/contact")} className="w-40 h-10 rounded-xl bg-white text-indigo-600 border border-indigo-600 text-sm shadow-lg hover:bg-indigo-100 transition">
           Contact Us
         </button>
       </div>

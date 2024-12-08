@@ -15,7 +15,7 @@ const Footer: React.FC = () => (
         Ready to transform <span className="text-purple"> your </span> project with sustainable solutions?
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center"> Let’s discuss how MBG Industrial and General Technologies can bring innovation, efficiency, and sustainability to your next project.</p>
-        <MagicButton title="Get in Touch" position="right" icon={<FaLocationArrow />} />
+        <MagicButton link="/contact" title="Get in Touch" position="right" icon={<FaLocationArrow />} />
 
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -57,7 +57,7 @@ const Footer: React.FC = () => (
             </motion.a>
           </div>
           <p className="text-gray-400">19, Alade Avenue, Ikeja, Lagos</p>
-          <p className="text-gray-400">Email: mbgigtlimited@gmail.com</p>
+          <p className="text-gray-400">Email: enquiries@mbgtechsolutions.com</p>
           <p className="text-gray-400">Phone: 08033336384</p>
         </div>
       </div>

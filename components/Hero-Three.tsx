@@ -38,7 +38,7 @@ export default function HeroBannerThree() {
             className='text-2xl md:text-7xl font-bold dark:text-white'
             words='MBG is dedicated to driving innovation in engineering and creating eco-friendly solutions that empower communities.'
         />
-      <MagicButton title='Learn More' icon={<FiArrowRight />} position='right' />
+      <MagicButton link="/about" title='Learn More' icon={<FiArrowRight />} position='right' />
 
       </motion.div>
     </ImagesSlider>
